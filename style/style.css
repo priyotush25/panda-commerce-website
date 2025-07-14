@@ -106,6 +106,7 @@ p {
 }
 
 .main-section {
+  padding: 46px 20px;
   margin: 60px auto;
   background: rgb(244, 244, 244);
 }
@@ -192,4 +193,48 @@ p {
   );
 }
 
-/* =============Category Style================ */
+/* =============Product Section Style================ */
+.shoes-section {
+  margin: 90px 0;
+}
+.shoes-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.shoes-category {
+  margin: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shoes-card {
+  flex: 1;
+  padding: 24px;
+  text-align: center;
+  width: 360px;
+  border-radius: 20px;
+
+  background: rgb(255, 255, 255);
+}
+
+.shoes-card img {
+  width: 336px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+.price {
+  font-size: 24px;
+  font-weight: 500;
+}
+.buy-now-btn {
+  border-radius: 6px;
+
+  background: rgb(0, 0, 0);
+}
