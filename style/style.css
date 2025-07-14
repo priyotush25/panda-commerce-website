@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  width: 1212px;
+  margin: 0 auto;
+}
+
+nav {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 24px;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  color: rgb(112, 112, 112);
+  text-decoration: none;
+}
+
+.search-option input {
+  border: none;
+  height: 48px;
+  width: 508px;
+  padding: 12px 20px;
+  border-radius: 66px;
+  background: rgb(241, 241, 241);
+}
+
+.search-option i {
+  top: 15px;
+  right: 20px;
+  width: 21px;
+  color: rgb(186, 186, 186);
+  position: absolute;
+}
+
+.search-option {
+  position: relative;
+}
+
+/* =============Share Style================ */
+h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: rgb(31, 31, 31);
+}
+
+h2 {
+  font-size: 41px;
+  font-weight: 500;
+  color: rgb(255, 19, 111);
+}
+
+p {
+  margin: 20px 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(78, 78, 78);
+}
+
+.primary-btn {
+  color: white;
+  font-weight: 500;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.1s;
+  background: linear-gradient(
+    180deg,
+    rgb(255, 88, 155) -0.006%,
+    rgb(255, 19, 111) 99.994%
+  );
+  margin-top: 20px;
+}
+
+.primary-btn:hover {
+  background: linear-gradient(
+    180deg,
+    rgb(245, 55, 131) -0.006%,
+    rgb(250, 5, 99) 99.994%
+  );
+}
+
+.title {
+  font-weight: 600;
+  font-size: 36px;
+  color: rgb(31, 31, 31);
+}
+
+.main-section {
+  margin: 60px auto;
+  background: rgb(244, 244, 244);
+}
+
+/* =============Banner Style================ */
+
+.banner {
+  margin: 60px auto;
+  border-radius: 8px;
+  padding: 50px 40px;
+  background: rgb(254, 234, 233);
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.banner-text {
+  flex: 1;
+  max-width: 570px;
+}
+
+.banner-img img {
+  padding-right: 20px;
+  width: 400px;
+}
+
+/* =============Category Style================ */
+
+.category-content {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category-card {
+  border-radius: 20px;
+  padding: 20px 40px;
+  width: 360px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    151.85deg,
+    rgb(255, 156, 53) 14.537%,
+    rgb(255, 208, 25) 84.486%
+  );
+}
+
+.category-card h1 {
+  font-weight: 500;
+  font-size: 36px;
+  color: rgb(255, 255, 255);
+}
+
+.category-card img {
+  max-width: 100%;
+  width: 100px;
+}
+
+.card-one-bg {
+  background: linear-gradient(
+    151.85deg,
+    rgb(255, 156, 53) 14.537%,
+    rgb(255, 208, 25) 84.486%
+  );
+}
+
+.card-two-bg {
+  background: linear-gradient(
+    180deg,
+    rgb(255, 88, 155) -0.006%,
+    rgb(255, 19, 111) 99.994%
+  );
+}
+
+.card-three-bg {
+  background: linear-gradient(
+    170.38deg,
+    rgb(66, 137, 255) 15.416%,
+    rgb(63, 7, 248) 74.29%
+  );
+}
+
+/* =============Category Style================ */
