@@ -1,295 +1,285 @@
+/* ========== Google Font ========== */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+/* ========== Base Styles ========== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 body {
-  width: 1212px;
+  max-width: 1212px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
-nav {
+/* ========== Navbar ========== */
+.navbar {
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-nav ul {
+.navbar-menu {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
   gap: 24px;
 }
 
-ul li {
+.navbar-menu li {
   list-style: none;
 }
 
-ul li a {
-  color: rgb(112, 112, 112);
+.navbar-menu li a {
+  color: #707070;
   text-decoration: none;
 }
 
-.search-option input {
+.navbar-search {
+  position: relative;
+}
+
+.navbar-search input {
   border: none;
   height: 48px;
   width: 508px;
   padding: 12px 20px;
   border-radius: 66px;
-  background: rgb(241, 241, 241);
+  background: #f1f1f1;
 }
 
-.search-option i {
+.navbar-search i {
+  position: absolute;
   top: 15px;
   right: 20px;
   width: 21px;
-  color: rgb(186, 186, 186);
-  position: absolute;
+  color: #bababa;
 }
 
-.search-option {
-  position: relative;
-}
-
-/* =============Share Style================ */
+/* ========== Shared Elements ========== */
 h1 {
   font-size: 56px;
   font-weight: 700;
-  color: rgb(31, 31, 31);
+  color: #1f1f1f;
 }
 
-h2 {
-  font-size: 41px;
-  font-weight: 500;
-  color: rgb(255, 19, 111);
+h2.section-title {
+  font-size: 36px;
+  font-weight: 600;
+  color: #1f1f1f;
 }
 
 p {
   margin: 20px 0;
   font-size: 16px;
-  font-weight: 400;
-  color: rgb(78, 78, 78);
+  color: #4e4e4e;
 }
 
-.primary-btn {
-  color: white;
+.btn-buy {
+  color: #fff;
   font-weight: 500;
-  padding: 12px 24px;
+  padding: 15px 30px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.1s;
-  background: linear-gradient(
-    180deg,
-    rgb(255, 88, 155) -0.006%,
-    rgb(255, 19, 111) 99.994%
-  );
   margin-top: 20px;
+  background: linear-gradient(180deg, #ff589b 0%, #ff136f 100%);
+  transition: background 0.3s;
 }
 
-.primary-btn:hover {
-  background: linear-gradient(
-    180deg,
-    rgb(245, 55, 131) -0.006%,
-    rgb(250, 5, 99) 99.994%
-  );
+.btn-buy:hover {
+  background: linear-gradient(180deg, #f53783 0%, #fa0563 100%);
 }
 
-.title {
-  font-weight: 600;
-  font-size: 36px;
-  color: rgb(31, 31, 31);
+.link-see-all {
+  color: #ff136f;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 .main-section {
-  padding: 46px 20px;
-  margin: 60px auto;
+  padding: 60px 20px;
   background: rgb(244, 244, 244);
 }
 
-/* =============Banner Style================ */
-
-.banner {
-  margin: 60px auto;
-  border-radius: 8px;
+/* ========== Hero Section ========== */
+.hero-banner {
+  margin: 60px 0;
   padding: 50px 40px;
-  background: rgb(254, 234, 233);
+  background: #feeae9;
+  border-radius: 8px;
 }
 
-.banner-content {
+.hero-content {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
-.banner-text {
-  flex: 1;
+
+.hero-text {
   max-width: 570px;
 }
 
-.banner-img img {
-  padding-right: 20px;
-  width: 400px;
+#price {
+  font-size: 41px;
+  font-weight: 500;
+  color: rgb(255, 19, 111);
 }
 
-/* =============Category Style================ */
+.hero-image img {
+  width: 400px;
+  padding-right: 20px;
+}
 
-.category-content {
+/* ========== Categories ========== */
+.product-categories {
+  margin: 60px 0;
+}
+
+.categories-grid {
   margin-top: 24px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-
-.category-card {
-  border-radius: 20px;
-  padding: 20px 40px;
-  width: 360px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: linear-gradient(
-    151.85deg,
-    rgb(255, 156, 53) 14.537%,
-    rgb(255, 208, 25) 84.486%
-  );
-}
-
-.category-card h1 {
-  font-weight: 500;
-  font-size: 36px;
-  color: rgb(255, 255, 255);
-}
-
-.category-card img {
-  max-width: 100%;
-  width: 100px;
-}
-
-.card-one-bg {
-  background: linear-gradient(
-    151.85deg,
-    rgb(255, 156, 53) 14.537%,
-    rgb(255, 208, 25) 84.486%
-  );
-}
-
-.card-two-bg {
-  background: linear-gradient(
-    180deg,
-    rgb(255, 88, 155) -0.006%,
-    rgb(255, 19, 111) 99.994%
-  );
-}
-
-.card-three-bg {
-  background: linear-gradient(
-    170.38deg,
-    rgb(66, 137, 255) 15.416%,
-    rgb(63, 7, 248) 74.29%
-  );
-}
-
-/* =============Product Section Style================ */
-.shoes-section {
-  margin: 90px 0;
-}
-.shoes-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   gap: 24px;
 }
 
+.category-card {
+  width: 360px;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.category-card h3 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.category-card img {
+  width: 100px;
+}
+
+.watch-category {
+  background: linear-gradient(151.85deg, #ff9c35 14.54%, #ffd019 84.49%);
+}
+
+.bag-category {
+  background: linear-gradient(180deg, #ff589b 0%, #ff136f 100%);
+}
+
 .shoes-category {
-  margin: 24px 0;
+  background: linear-gradient(170.38deg, #4289ff 15.42%, #3f07f8 74.29%);
+}
+
+/* ========== Product Sections ========== */
+.product-section {
+  margin: 90px 0;
+}
+
+.section-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 24px;
 }
 
-.shoes-card {
-  flex: 1;
+.product-grid {
+  display: flex;
+  gap: 24px;
+}
+
+.product-card {
+  width: 360px;
   padding: 24px;
   text-align: center;
-  width: 360px;
   border-radius: 20px;
-
-  background: rgb(255, 255, 255);
+  background: #fff;
 }
 
-.shoes-card img {
+.product-card img {
   width: 336px;
 }
 
 .card-title {
   font-size: 24px;
   font-weight: 600;
+  margin: 10px 0;
 }
+
 .price {
   font-size: 24px;
   font-weight: 500;
+  color: #1f1f1f;
 }
+
 .buy-now-btn {
+  background: #000;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
   border-radius: 6px;
-
-  background: rgb(0, 0, 0);
+  margin-top: 12px;
+  cursor: pointer;
 }
 
-/* =============Product Section Style================ */
-.touch-sction {
-  width: 1212px;
+/* ========== Newsletter Section ========== */
+.newsletter {
+  width: 100%;
+  max-width: 1212px;
   height: 455px;
+  margin: 60px auto;
+  background: #fff2f1;
   border-radius: 24px;
-  background: rgb(255, 242, 241);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-}
-
-.touch-sction h1 {
-  font-weight: 600;
-  font-size: 30px;
-}
-
-.email-section {
-  border-radius: 8px;
-  display: flex;
   align-items: center;
-  justify-content: space-between;
+  text-align: center;
+}
+
+.newsletter-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.newsletter-subtitle {
+  color: #4e4e4e;
+  margin-bottom: 30px;
+}
+
+.newsletter-form {
   width: 683px;
   height: 73px;
-  background: rgb(255, 255, 255);
+  background: #fff;
+  border-radius: 8px;
+  display: flex;
+  overflow: hidden;
 }
 
-.email-section input[type="email"] {
-  width: 80%;
-  height: 100%;
+.newsletter-form input[type="email"] {
+  flex: 1;
   border: none;
-  border-radius: 8px 0 0 8px;
+  padding: 0 20px;
+  font-size: 16px;
 }
-.email-section input[type="submit"] {
+
+.newsletter-form input[type="submit"] {
+  width: 160px;
+  border: none;
+  background: linear-gradient(180deg, #ff589b 0%, #ff136f 100%);
+  color: #fff;
+  font-size: 20px;
   font-weight: 500;
-  font-size: 24px;
-  border-radius: 0 8px 8px 0;
-  color: white;
-  border: none;
-  width: 20%;
-  height: 100%;
-  background: linear-gradient(
-    180deg,
-    rgb(255, 88, 155) 0.004%,
-    rgb(255, 19, 111) 100.004%
-  );
+  cursor: pointer;
 }
 
-.email-section input::placeholder {
-  padding: 35px;
-  font-weight: 400;
-  font-size: 24px;
-  color: rgb(204, 204, 204);
+.newsletter-form input::placeholder {
+  color: #cccccc;
+  font-size: 16px;
 }
